@@ -1,0 +1,115 @@
+# ==============================================================================
+# PermaWatch - Git Ignore Configuration
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Environment
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Geospatial & Raw Datasets (Large Files)
+# ------------------------------------------------------------------------------
+# Raw NetCDF files (e.g. 12+ MB ESA CCI products)
+data/raw/*.nc
+data/raw/*.nc4
+data/raw/*.tmp
+*.nc
+*.nc4
+
+# Raw GeoTIFF Tiles (downloaded satellite & DEM tiles)
+data/raw/dem/*.tif
+data/raw/satellite/*.tif
+
+# Keep directories in version control
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+!data/samples/*.csv
+
+# Optional: Large processed Parquet/CSV (uncomment if dataset > 100MB)
+# data/processed/*.parquet
+# data/processed/permafrost_training_dataset.csv
+# outputs/predictions/regional_predictions_grid.csv
+
+# ------------------------------------------------------------------------------
+# Machine Learning Models (Large Binaries)
+# ------------------------------------------------------------------------------
+# If keeping models in Git LFS or retraining on target machines:
+# models/*.pkl
+# models/*.joblib
+# Keep scaler by default:
+# !models/scaler.pkl
+
+# ------------------------------------------------------------------------------
+# Jupyter Notebooks & Streamlit
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.streamlit/secrets.toml
+
+# ------------------------------------------------------------------------------
+# Operating System & IDE Specific Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+
+# Editors & IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ------------------------------------------------------------------------------
+# Logs, Temp & System Artifacts
+# ------------------------------------------------------------------------------
+*.log
+*.tmp
+.cache/
+.gemini/
+.system_generated/

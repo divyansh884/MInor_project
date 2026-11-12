@@ -1,0 +1,58 @@
+{
+  "models": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.7994,
+      "Balanced Accuracy": 0.5749,
+      "Precision": 0.8231,
+      "Recall": 0.7994,
+      "F1-Score": 0.8105,
+      "ROC-AUC": 0.6157
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.7881,
+      "Balanced Accuracy": 0.5143,
+      "Precision": 0.8009,
+      "Recall": 0.7881,
+      "F1-Score": 0.7944,
+      "ROC-AUC": 0.6218
+    },
+    {
+      "Model": "SVM",
+      "Accuracy": 0.4817,
+      "Balanced Accuracy": 0.4473,
+      "Precision": 0.7739,
+      "Recall": 0.4817,
+      "F1-Score": 0.5719,
+      "ROC-AUC": 0.4453
+    }
+  ],
+  "best_model": "Random Forest",
+  "best_metrics": {
+    "Model": "Random Forest",
+    "Accuracy": 0.7994,
+    "Balanced Accuracy": 0.5749,
+    "Precision": 0.8231,
+    "Recall": 0.7994,
+    "F1-Score": 0.8105,
+    "ROC-AUC": 0.6157,
+    "Rank_Score": 1.4262000000000001
+  },
+  "test_samples": 7000,
+  "features_used": [
+    "latitude",
+    "longitude",
+    "elevation",
+    "slope",
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir1",
+    "swir2",
+    "ndvi",
+    "ndwi",
+    "ndsi"
+  ]
+}

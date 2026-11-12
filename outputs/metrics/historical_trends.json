@@ -1,0 +1,11 @@
+{
+  "year_base": 2020,
+  "year_recent": 2023,
+  "region": "Northern & Interior Alaska",
+  "mean_pfr_2020": 64.81,
+  "mean_pfr_2023": 66.27,
+  "net_pfr_change": 1.46,
+  "area_degraded_pct": 10.54,
+  "area_stable_pct": 68.11,
+  "area_increased_pct": 21.36
+}

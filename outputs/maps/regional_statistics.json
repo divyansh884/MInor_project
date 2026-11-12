@@ -1,0 +1,19 @@
+{
+  "model": "XGBoost",
+  "total_cells": 32190,
+  "permafrost_cells": 28632,
+  "non_permafrost_cells": 3558,
+  "permafrost_fraction_pct": 88.95,
+  "total_area_km2": 379443.1,
+  "permafrost_area_km2": 337502.7,
+  "mean_likelihood": 0.8156,
+  "median_likelihood": 0.9809,
+  "lat_range": [
+    64.0,
+    71.2
+  ],
+  "lon_range": [
+    -156.0,
+    -145.0
+  ]
+}
